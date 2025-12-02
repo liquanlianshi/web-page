@@ -13,9 +13,9 @@ const Contact: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center mb-20"
           >
-            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">Get in Touch</h1>
+            <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">联系我们</h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              Ready to start your next project? We would love to hear from you.
+              准备好开始您的下一个项目了吗？我们期待您的回音。
             </p>
           </motion.div>
 
@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
                       <Mail />
                     </div>
                     <div>
-                      <h3 className="text-xl text-white font-medium mb-2">Email Us</h3>
+                      <h3 className="text-xl text-white font-medium mb-2">发送邮件</h3>
                       <p className="text-gray-400">hello@aetheria.com</p>
                       <p className="text-gray-400">careers@aetheria.com</p>
                     </div>
@@ -44,9 +44,9 @@ const Contact: React.FC = () => {
                       <Phone />
                     </div>
                     <div>
-                      <h3 className="text-xl text-white font-medium mb-2">Call Us</h3>
+                      <h3 className="text-xl text-white font-medium mb-2">拨打电话</h3>
                       <p className="text-gray-400">+1 (555) 123-4567</p>
-                      <p className="text-gray-400">Mon-Fri, 9am - 6pm EST</p>
+                      <p className="text-gray-400">周一至周五, 9am - 6pm EST</p>
                     </div>
                  </div>
 
@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
                       <MapPin />
                     </div>
                     <div>
-                      <h3 className="text-xl text-white font-medium mb-2">Visit Us</h3>
+                      <h3 className="text-xl text-white font-medium mb-2">拜访我们</h3>
                       <p className="text-gray-400">123 Design Avenue, Suite 101</p>
                       <p className="text-gray-400">New York, NY 10012</p>
                     </div>
@@ -73,44 +73,44 @@ const Contact: React.FC = () => {
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm text-gray-400 uppercase tracking-wide">Name</label>
+                    <label htmlFor="name" className="text-sm text-gray-400 uppercase tracking-wide">姓名</label>
                     <input 
                       type="text" 
                       id="name" 
                       className="w-full bg-background border border-white/10 p-4 text-white focus:border-primary focus:outline-none transition-colors"
-                      placeholder="John Doe"
+                      placeholder="请输入您的姓名"
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm text-gray-400 uppercase tracking-wide">Email</label>
+                    <label htmlFor="email" className="text-sm text-gray-400 uppercase tracking-wide">邮箱</label>
                     <input 
                       type="email" 
                       id="email" 
                       className="w-full bg-background border border-white/10 p-4 text-white focus:border-primary focus:outline-none transition-colors"
-                      placeholder="john@example.com"
+                      placeholder="请输入您的邮箱"
                     />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm text-gray-400 uppercase tracking-wide">Subject</label>
+                  <label htmlFor="subject" className="text-sm text-gray-400 uppercase tracking-wide">主题</label>
                   <select 
                     id="subject"
                     className="w-full bg-background border border-white/10 p-4 text-white focus:border-primary focus:outline-none transition-colors appearance-none"
                   >
-                    <option>General Inquiry</option>
-                    <option>Project Proposal</option>
-                    <option>Career Opportunity</option>
+                    <option>一般咨询</option>
+                    <option>项目合作</option>
+                    <option>加入我们</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm text-gray-400 uppercase tracking-wide">Message</label>
+                  <label htmlFor="message" className="text-sm text-gray-400 uppercase tracking-wide">留言</label>
                   <textarea 
                     id="message" 
                     rows={4}
                     className="w-full bg-background border border-white/10 p-4 text-white focus:border-primary focus:outline-none transition-colors resize-none"
-                    placeholder="Tell us about your project..."
+                    placeholder="请告诉我们要咨询的项目..."
                   />
                 </div>
 
@@ -118,7 +118,7 @@ const Contact: React.FC = () => {
                   type="button" 
                   className="w-full bg-white text-black font-bold uppercase tracking-widest py-4 hover:bg-primary transition-colors duration-300"
                 >
-                  Send Message
+                  发送信息
                 </button>
               </form>
             </motion.div>

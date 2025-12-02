@@ -29,7 +29,7 @@ const Home: React.FC = () => {
               transition={{ delay: 0.2 }}
               className="text-primary font-medium tracking-[0.2em] uppercase mb-6"
             >
-              The Future of Digital Art
+              重塑数字艺术边界
             </motion.p>
             <motion.h1 
               initial={{ opacity: 0, y: 30 }}
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
                 className="group relative px-8 py-4 bg-white text-black font-semibold tracking-wide overflow-hidden"
               >
                 <span className="relative z-10 flex items-center gap-2">
-                  View Portfolio <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  探索作品 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </span>
                 <div className="absolute inset-0 bg-primary transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100 z-0"></div>
               </NavLink>
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                 <span className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-primary transition-colors">
                   <Play className="w-4 h-4 fill-current" />
                 </span>
-                <span className="font-medium tracking-wide">Watch Reel</span>
+                <span className="font-medium tracking-wide">品鉴影像</span>
               </button>
             </motion.div>
           </div>
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
           transition={{ delay: 1, duration: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-gray-500"
         >
-          <span className="text-[10px] tracking-widest uppercase writing-mode-vertical">Scroll</span>
+          <span className="text-[10px] tracking-widest uppercase writing-mode-vertical">滑动</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-gray-500 to-transparent"></div>
         </motion.div>
       </section>
@@ -84,13 +84,13 @@ const Home: React.FC = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20">
              <div className="max-w-xl">
-               <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">Redefining Digital Experiences</h2>
+               <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-6">重新定义 · 数字交互</h2>
                <p className="text-gray-400 leading-relaxed">
-                 We blend aesthetic excellence with technical prowess to deliver solutions that are not just visually stunning, but also highly functional.
+                 我们融汇极致美学与精湛技艺，打造兼具视觉震撼与卓越功能的数字杰作。
                </p>
              </div>
              <NavLink to="/services" className="hidden md:flex items-center gap-2 text-primary hover:text-white transition-colors mt-6 md:mt-0">
-               All Services <ArrowRight className="w-4 h-4" />
+               查看服务 <ArrowRight className="w-4 h-4" />
              </NavLink>
           </div>
 
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
       {/* Selected Works Teaser */}
       <section className="py-32">
         <div className="container mx-auto px-6">
-          <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-12">Selected Works</h2>
+          <h2 className="text-sm text-primary font-bold tracking-widest uppercase mb-12">精选 · 案例</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <motion.div 
                initial={{ opacity: 0, scale: 0.95 }}
@@ -157,7 +157,7 @@ const Home: React.FC = () => {
           
           <div className="flex justify-center mt-20">
             <NavLink to="/portfolio" className="border border-white/20 px-10 py-4 text-white hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-widest text-sm">
-              View All Projects
+              浏览全部案例
             </NavLink>
           </div>
         </div>

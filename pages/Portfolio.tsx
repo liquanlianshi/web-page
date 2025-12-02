@@ -13,7 +13,7 @@ const Portfolio: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-serif font-bold text-white mb-8"
           >
-            Our Work
+            精选案例
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0 }}

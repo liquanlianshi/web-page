@@ -1,35 +1,35 @@
 import { Feature, NavItem, PortfolioItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Home', path: '/' },
-  { label: 'Portfolio', path: '/portfolio' },
-  { label: 'Services', path: '/services' },
-  { label: 'Contact', path: '/contact' },
+  { label: '首页', path: '/' },
+  { label: '作品', path: '/portfolio' },
+  { label: '服务', path: '/services' },
+  { label: '联系', path: '/contact' },
 ];
 
 export const FEATURES: Feature[] = [
   {
     id: 1,
-    title: "Brand Identity",
-    description: "Crafting unique visual languages that resonate with your audience and define your market presence.",
+    title: "品牌美学",
+    description: "打造独特的视觉语言，与您的受众产生共鸣，定义您的市场地位。",
     iconName: "Palette"
   },
   {
     id: 2,
-    title: "Digital Strategy",
-    description: "Data-driven insights to propel your business forward in an ever-evolving digital landscape.",
+    title: "数字战略",
+    description: "基于数据的洞察，在不断演变的数字景观中推动您的业务向前发展。",
     iconName: "TrendingUp"
   },
   {
     id: 3,
-    title: "UI/UX Design",
-    description: "Creating intuitive and immersive user experiences that delight and convert.",
+    title: "交互体验",
+    description: "创造直观且沉浸式的用户体验，带来愉悦感并提升转化率。",
     iconName: "Layers"
   },
   {
     id: 4,
-    title: "Development",
-    description: "Robust, scalable, and high-performance technical solutions built for the future.",
+    title: "技术构架",
+    description: "构建稳健、可扩展且高性能的技术解决方案，面向未来。",
     iconName: "Code"
   }
 ];
