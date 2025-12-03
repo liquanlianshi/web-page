@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-d
 import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
@@ -27,6 +28,7 @@ const AnimatedRoutes: React.FC = () => {
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-background text-gray-100 font-sans selection:bg-primary selection:text-black">
         <Navbar />
         <main className="flex-grow">
