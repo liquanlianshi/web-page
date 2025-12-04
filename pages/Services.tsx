@@ -15,7 +15,7 @@ const Services: React.FC = () => {
                animate={{ opacity: 1 }}
                className="text-primary font-bold tracking-widest uppercase mb-4"
              >
-               专业领域
+               Expertise
              </motion.p>
              <motion.h1 
                initial={{ opacity: 0, y: 20 }}
@@ -23,7 +23,7 @@ const Services: React.FC = () => {
                transition={{ delay: 0.1 }}
                className="text-5xl md:text-6xl font-serif font-bold text-white leading-tight"
              >
-               全方位设计与开发方案
+               全方位设计与开发解决方案
              </motion.h1>
           </div>
 
@@ -32,7 +32,8 @@ const Services: React.FC = () => {
               <motion.div 
                 key={feature.id}
                 initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={index === 0 ? { opacity: 1, y: 0 } : undefined}
+                whileInView={index !== 0 ? { opacity: 1, y: 0 } : undefined}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
                 className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-16 items-center`}
@@ -52,13 +53,13 @@ const Services: React.FC = () => {
                 <div className="w-full md:w-1/2">
                    <h2 className="text-3xl font-serif text-white mb-6">{feature.title}</h2>
                    <p className="text-gray-400 leading-relaxed mb-8 text-lg">
-                     {feature.description} 我们深入了解您的品牌核心价值，将其转化为连贯的数字语言。
+                     {feature.description} 我们深入洞察品牌核心，构建连贯的数字语言。
                    </p>
                    <ul className="space-y-4">
                      {[1, 2, 3].map((i) => (
                        <li key={i} className="flex items-center gap-3 text-gray-300">
                          <CheckCircle2 className="text-primary w-5 h-5" />
-                         <span>专业服务亮点 {i}</span>
+                         <span>核心服务优势 {i}</span>
                        </li>
                      ))}
                    </ul>
