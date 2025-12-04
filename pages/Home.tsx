@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Palette, TrendingUp, Layers, Code, Play } from 'lucide-react';
 import { NavLink } from 'react-router-dom';
 import AnimatedPage from '../components/AnimatedPage';
-import { FEATURES } from '../constants';
+import { FEATURES, PORTFOLIO_ITEMS } from '../constants';
 
 const iconMap: Record<string, React.ReactNode> = {
   Palette: <Palette className="w-8 h-8" />,
@@ -13,6 +13,24 @@ const iconMap: Record<string, React.ReactNode> = {
 };
 
 const Home: React.FC = () => {
+  // Preload portfolio images when Home component mounts
+  useEffect(() => {
+    const preloadImages = () => {
+      PORTFOLIO_ITEMS.forEach((item) => {
+        const img = new Image();
+        img.src = item.imageUrl;
+      });
+    };
+
+    // Use requestIdleCallback if available to not block the main thread
+    if ('requestIdleCallback' in window) {
+      (window as any).requestIdleCallback(() => preloadImages());
+    } else {
+      // Fallback: small timeout to let the page render first
+      setTimeout(preloadImages, 1000);
+    }
+  }, []);
+
   return (
     <AnimatedPage>
       {/* Hero Section */}
