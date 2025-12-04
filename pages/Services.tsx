@@ -39,11 +39,22 @@ const Services: React.FC = () => {
                 className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-16 items-center`}
               >
                 <div className="w-full md:w-1/2">
-                  <div className="aspect-video bg-surface border border-white/5 relative overflow-hidden group">
-                     {/* Abstract decorative graphic */}
-                     <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 via-transparent to-blue-500/10 opacity-50"></div>
-                     <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-9xl font-serif text-white/5 group-hover:text-white/10 transition-colors duration-500 font-bold">
+                  <div className="aspect-video bg-surface border border-white/5 relative overflow-hidden group rounded-sm">
+                     {/* Background Image with Premium Hover Effect */}
+                     <div className="absolute inset-0 bg-black">
+                       <img 
+                         src={feature.imageUrl} 
+                         alt={feature.title}
+                         className="w-full h-full object-cover opacity-50 group-hover:opacity-80 group-hover:scale-105 transition-all duration-1000 ease-out grayscale group-hover:grayscale-0"
+                       />
+                     </div>
+
+                     {/* Overlay gradient */}
+                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-opacity duration-500"></div>
+                     
+                     {/* Decorative Number */}
+                     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <span className="text-9xl font-serif text-white/10 group-hover:text-white/30 transition-colors duration-500 font-bold tracking-tighter">
                           0{index + 1}
                         </span>
                      </div>
