@@ -1,20 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Aetheria Design Template
 
-# Run and deploy your AI Studio app
+Aetheria 是一个专注于高端美学与数字交互体验的现代网页设计模板。该项目融合了极简主义设计原则与流畅的动态效果，旨在展示数字艺术与技术的完美结合。
 
-This contains everything you need to run your app locally.
+## ✨ 项目亮点
 
-View your app in AI Studio: https://ai.studio/apps/drive/1kLrccLGBuDip5f-h6LIYN_2MI9X1g7BD
+- **极致美学**：采用 Cinzel 和 Outfit 字体组合，搭配深色系配色，营造奢华与专业的视觉氛围。
+- **沉浸式交互**：利用 Framer Motion 实现丝滑的页面转场、滚动视差与手势交互。
+- **响应式设计**：基于 Tailwind CSS 构建，完美适配桌面与移动端设备。
+- **3D 视觉体验**：包含独特的 3D 轮播展示组件，提升作品展示的互动性。
 
-## Run Locally
+## 🛠 技术栈
 
-**Prerequisites:**  Node.js
+- **核心框架**: [React 19](https://react.dev/)
+- **构建工具**: [Vite](https://vitejs.dev/)
+- **语言**: [TypeScript](https://www.typescriptlang.org/)
+- **样式**: [Tailwind CSS](https://tailwindcss.com/)
+- **动画**: [Framer Motion](https://www.framer.com/motion/)
+- **图标**: [Lucide React](https://lucide.dev/) & [Remix Icon](https://remixicon.com/)
+- **路由**: [React Router v7](https://reactrouter.com/)
 
+## 🚀 快速开始
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 前提条件
+
+确保你的本地环境已安装 [Node.js](https://nodejs.org/) (推荐 v18 或更高版本)。
+
+### 安装步骤
+
+1. **安装依赖**
+
+   在项目根目录下运行：
+   ```bash
+   npm install
+   ```
+
+2. **启动开发服务器**
+
+   ```bash
+   npm run dev
+   ```
+
+   项目启动后，通常可以通过 `http://localhost:3000` 访问。
+
+### 构建生产版本
+
+如果要部署项目，请运行构建命令：
+```bash
+npm run build
+```
+
+构建产物将生成在 `dist` 目录中。
+
+## 📂 项目结构
+
+```
+.
+├── components/      # UI 组件 (Navbar, Footer, AnimatedPage, GalleryOverlay 等)
+├── pages/           # 页面路由 (Home, Portfolio, Services, Contact)
+├── constants.ts     # 网站静态数据与配置
+├── types.ts         # TypeScript 类型定义
+├── App.tsx          # 应用主入口与路由配置
+├── index.html       # HTML 模板与 Tailwind 配置
+└── vite.config.ts   # Vite 构建配置
+```
+
+## 📄 许可证
+
+本项目仅供学习与展示用途。
