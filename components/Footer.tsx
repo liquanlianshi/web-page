@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
                 <Github size={18} />
               </a>
             </div>
-            <p className="mt-6 text-gray-500 text-sm">hello@aetheria.com</p>
+            <p className="mt-6 text-gray-500 text-sm">2899272171@qq.com</p>
           </div>
         </div>
 

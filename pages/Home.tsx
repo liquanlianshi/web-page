@@ -108,7 +108,7 @@ const Home: React.FC = () => {
                </p>
              </div>
              <NavLink to="/services" className="hidden md:flex items-center gap-2 text-primary hover:text-white transition-colors mt-6 md:mt-0">
-               查看服务 <ArrowRight className="w-4 h-4" />
+               查看网页介绍 <ArrowRight className="w-4 h-4" />
              </NavLink>
           </div>
 

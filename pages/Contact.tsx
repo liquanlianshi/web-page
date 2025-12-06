@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
           >
             <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6">联系我们</h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-              准备好开始您的下一个项目了吗？我们期待您的回音。
+              您是否对我们的网页设计感到满意？我们期待您的回音。
             </p>
           </motion.div>
 
@@ -34,8 +34,8 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl text-white font-medium mb-2">发送邮件</h3>
-                      <p className="text-gray-400">hello@aetheria.com</p>
-                      <p className="text-gray-400">careers@aetheria.com</p>
+                      <p className="text-gray-400">2899272171@qq.com</p>
+                      <p className="text-gray-400">2407040123@s.upc.edu.cn</p>
                     </div>
                  </div>
                  
@@ -45,8 +45,8 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl text-white font-medium mb-2">拨打电话</h3>
-                      <p className="text-gray-400">+1 (555) 123-4567</p>
-                      <p className="text-gray-400">周一至周五, 9am - 6pm EST</p>
+                      <p className="text-gray-400">17729030419</p>
+                      <p className="text-gray-400">周一至周五, 9am - 6pm</p>
                     </div>
                  </div>
 
@@ -56,8 +56,8 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="text-xl text-white font-medium mb-2">拜访我们</h3>
-                      <p className="text-gray-400">123 Design Avenue, Suite 101</p>
-                      <p className="text-gray-400">New York, NY 10012</p>
+                      <p className="text-gray-400">中国石油大学（华东）16号楼</p>
+                      <p className="text-gray-400">山东，青岛，黄岛区</p>
                     </div>
                  </div>
                </div>

@@ -11,6 +11,7 @@ export interface Feature {
   description: string;
   iconName: string;
   imageUrl: string;
+  points?: string[]; // 新增这一行
 }
 
 export interface PortfolioItem {

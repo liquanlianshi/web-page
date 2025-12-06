@@ -23,7 +23,7 @@ const Services: React.FC = () => {
                transition={{ delay: 0.1 }}
                className="text-5xl md:text-6xl font-serif font-bold text-white leading-tight"
              >
-               全方位设计与开发解决方案
+               网页设计介绍
              </motion.h1>
           </div>
 
@@ -64,13 +64,14 @@ const Services: React.FC = () => {
                 <div className="w-full md:w-1/2">
                    <h2 className="text-3xl font-serif text-white mb-6">{feature.title}</h2>
                    <p className="text-gray-400 leading-relaxed mb-8 text-lg">
-                     {feature.description} 我们深入洞察品牌核心，构建连贯的数字语言。
+                     {feature.description}
                    </p>
                    <ul className="space-y-4">
-                     {[1, 2, 3].map((i) => (
+                     {/* 如果有 points 则显示 points，否则显示默认的占位符 */}
+                     {(feature.points || ["核心优势 1", "核心优势 2", "核心优势 3"]).map((point, i) => (
                        <li key={i} className="flex items-center gap-3 text-gray-300">
-                         <CheckCircle2 className="text-primary w-5 h-5" />
-                         <span>核心服务优势 {i}</span>
+                         <CheckCircle2 className="text-primary w-5 h-5 flex-shrink-0" />
+                         <span>{point}</span>
                        </li>
                      ))}
                    </ul>
