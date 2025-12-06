@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Instagram, Twitter, Linkedin, Github } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -29,16 +28,16 @@ const Footer: React.FC = () => {
             <h3 className="text-white font-medium mb-6 tracking-wide">Connect</h3>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-black transition-all duration-300">
-                <Instagram size={18} />
+                <i className="ri-qq-line text-lg"></i>
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-black transition-all duration-300">
-                <Twitter size={18} />
+                <i className="ri-wechat-line text-lg"></i>
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-black transition-all duration-300">
-                <Linkedin size={18} />
+                <i className="ri-tiktok-line text-lg"></i>
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-primary hover:text-black transition-all duration-300">
-                <Github size={18} />
+                <i className="ri-github-line text-lg"></i>
               </a>
             </div>
             <p className="mt-6 text-gray-500 text-sm">2899272171@qq.com</p>
